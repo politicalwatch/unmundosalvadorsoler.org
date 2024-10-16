@@ -11,7 +11,7 @@ const orgs = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla erat erat, tempus sit amet purus ut, dignissim lacinia mauris. Donec ultricies quam non aliquam porta. Maecenas ultricies felis odio, vitae dictum risus iaculis at.",
     url: "https://politicalwatch.es/",
     avatar: {
-      src: "images/logo-political-watch.svg",
+      src: "/images/logo-political-watch.svg",
       width: 480,
       height: 260,
     },
@@ -23,7 +23,7 @@ const orgs = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla erat erat, tempus sit amet purus ut, dignissim lacinia mauris. Donec ultricies quam non aliquam porta. Maecenas ultricies felis odio, vitae dictum risus iaculis at.",
     url: "https://www.campustecnologicodelicai.com/home",
     avatar: {
-      src: "images/logo-cti.svg",
+      src: "/images/logo-cti.svg",
       width: 580,
       height: 580,
     },

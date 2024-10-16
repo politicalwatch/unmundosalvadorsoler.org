@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/icon", "@nuxt/image"],
-  image: {
-    provider: "ipx",
-  },
   vite: {
     plugins: [svgLoader()],
     css: {

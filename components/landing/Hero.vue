@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { linksEnabled = false } = defineProps<{ linksEnabled: boolean }>();
+const { linksEnabled = false } = defineProps<{ linksEnabled?: boolean }>();
 </script>
 
 <template>
