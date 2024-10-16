@@ -1,0 +1,40 @@
+<script lang="ts" setup>
+interface Organization {
+  name: string;
+  alt: string;
+  description: string;
+  url: string;
+  avatar: {
+    src: string;
+    width: number;
+    height: number;
+  };
+}
+
+const { orgs = [] } = defineProps<{
+  orgs: Organization[];
+}>();
+</script>
+
+<template>
+  <div class="grid md:grid-cols-3 gap-20 mx-auto my-20">
+    <div v-for="item of orgs" class="hover:-translate-y-1">
+      <a :href="item.url" target="_blank">
+        <div class="w-full mb-8">
+          <NuxtImg
+            :src="item.avatar.src"
+            :alt="item.alt"
+            class="w-full h-full object-contain rounded transition"
+          />
+        </div>
+
+        <div class="mt-4">
+          <h2 class="text-xl uppercase font-medium text-primary-950 mb-2">
+            {{ item.name }}
+          </h2>
+          <p class="text-lg text-slate-700">{{ item.description }}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</template>

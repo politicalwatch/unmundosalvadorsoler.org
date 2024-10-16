@@ -41,7 +41,9 @@ const features = [
 
 <template>
   <div class="mt-16 md:mt-0">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    <h2
+      class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-primary-950"
+    >
       Everything you need to start a website
     </h2>
     <p class="text-lg mt-4 text-slate-600">
