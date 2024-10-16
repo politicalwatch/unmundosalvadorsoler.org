@@ -21,7 +21,7 @@ const { orgs = [] } = defineProps<{
     <div v-for="item of orgs" class="hover:-translate-y-1">
       <a :href="item.url" target="_blank">
         <div class="w-full mb-8">
-          <NuxtImg
+          <img
             :src="item.avatar.src"
             :alt="item.alt"
             class="w-full h-full object-contain rounded transition"
