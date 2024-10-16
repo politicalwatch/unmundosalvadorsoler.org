@@ -22,7 +22,7 @@ const { linksEnabled = false } = defineProps<{ linksEnabled: boolean }>();
       >
         Fundación<br />
         <span class="text-5xl lg:text-6xl xl:text-7xl font-light uppercase"
-          >Un mundo Salvador Soler</span
+          >Salvador Soler</span
         >
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
