@@ -55,12 +55,12 @@ const open = ref(false);
       >
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           <li v-for="item of menuitems">
-            <NuxtLink
+            <NuxtLinkLocale
               :to="item.path"
               class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
             >
               {{ item.title }}
-            </NuxtLink>
+            </NuxtLinkLocale>
           </li>
           <li
             v-for="locale in availableLocales"

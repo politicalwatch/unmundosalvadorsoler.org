@@ -29,7 +29,7 @@ const styles = {
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     :href="href"
     :class="[
       'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
@@ -38,5 +38,5 @@ const styles = {
       styles[styleName],
     ]"
     ><slot />
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>
