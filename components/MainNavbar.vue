@@ -1,7 +1,7 @@
 <script setup>
 import Logo from "@/assets/images/logo.svg?component";
 
-const menuitems = [
+const menuItems = [
   // {
   //   title: "About",
   //   path: "/about",
@@ -20,11 +20,11 @@ const open = ref(false);
 
 <template>
   <Container>
-    <header class="flex flex-col lg:flex-row justify-between items-center mb-5">
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <NuxtLink to="/" aria-label="Home" class="w-[120px]">
-          <Logo viewBox="0 0 694.75 694.82" />
-        </NuxtLink>
+    <header class="flex lg:flex-row justify-between items-center mb-5">
+      <NuxtLink to="/" aria-label="Home" class="w-[120px]">
+        <Logo viewBox="0 0 694.75 694.82" />
+      </NuxtLink>
+      <div class="flex items-center justify-between" v-if="menuItems.length">
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
             <svg
@@ -62,25 +62,21 @@ const open = ref(false);
               {{ item.title }}
             </NuxtLinkLocale>
           </li>
-          <li
-            v-for="locale in availableLocales"
-            :key="locale.code"
-            class="c-menu__item c-menu__item--lang"
-          >
-            <NuxtLink
-              :to="switchLocalePath(locale.code)"
-              class="flex items-center gap-1 uppercase font-medium"
-            >
-              <Icon
-                class="text-primary-600"
-                size="24px"
-                name="material-symbols-light:globe"
-              />
-              {{ locale.name }}
-            </NuxtLink>
-          </li>
         </ul>
       </nav>
+      <div v-for="locale in availableLocales" :key="locale.code" class="w-auto">
+        <NuxtLink
+          :to="switchLocalePath(locale.code)"
+          class="flex items-center gap-1 uppercase font-medium"
+        >
+          <Icon
+            class="text-primary-600"
+            size="24px"
+            name="material-symbols-light:globe"
+          />
+          {{ locale.name }}
+        </NuxtLink>
+      </div>
     </header>
   </Container>
 </template>
