@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-4xl font-bold mb-9 text-primary-950;
+}
+
+h2 {
+  @apply text-3xl font-semibold mb-8 text-primary-950;
+}
+
+h3 {
+  @apply text-2xl font-semibold mb-2 text-primary-950;
+}
+
+h4 {
+  @apply text-xl font-medium mb-2 text-primary-950;
+}
+
+h5 {
+  @apply text-lg font-medium mb-1 text-primary-950;
+}
+
+h6 {
+  @apply text-base font-medium mb-1 text-primary-950;
+}
+
+p {
+  @apply text-base mb-4;
+}
+
+table {
+  @apply mb-8 w-full border-collapse table-auto;
+}
+
+th {
+  @apply px-4 py-2 border text-left bg-primary-950 text-white border-orange-950;
+}
+
+td {
+  @apply px-4 py-2 border border-orange-950;
+}
+
+tr:nth-child(even) {
+}
