@@ -7,7 +7,7 @@ const { orgsLimit = null } = defineProps({
   },
 });
 
-const { data: orgs } = await useAsyncData("orgs", () => {
+const { data: orgs } = await useAsyncData(`orgs-${locale.value}`, () => {
   const query = queryContent("orgs").locale(locale.value).sort({ order: 1 });
 
   if (orgsLimit) query.limit(orgsLimit);
