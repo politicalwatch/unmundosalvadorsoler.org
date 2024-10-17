@@ -1,7 +1,7 @@
 <template>
   <div class="bg-primary-50 pt-10">
-    <LandingNavbar></LandingNavbar>
+    <MainNavbar />
     <slot></slot>
-    <LandingFooter></LandingFooter>
+    <MainFooter />
   </div>
 </template>

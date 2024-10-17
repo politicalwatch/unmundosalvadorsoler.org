@@ -29,18 +29,18 @@ defineProps(["plan"]);
           v-for="item of plan.features"
           class="flex items-start gap-3 text-gray-800"
         >
-          <LandingTick className="w-6 h-6" />
+          <Tick className="w-6 h-6" />
           <span>{{ item }}</span>
         </li>
       </ul>
       <div class="flex mt-8">
-        <LandingLink
+        <Link
           :href="plan.button.link || '#'"
           block
           :styleName="plan.popular ? 'primary' : 'outline'"
         >
           {{ plan.button.text || "Get Started" }}
-        </LandingLink>
+        </Link>
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@ const open = ref(false);
 </script>
 
 <template>
-  <LandingContainer>
+  <Container>
     <header class="flex flex-col lg:flex-row justify-between items-center mb-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <NuxtLink to="/" aria-label="Home" class="w-[120px]">
@@ -59,5 +59,5 @@ const open = ref(false);
         </ul>
       </nav>
     </header>
-  </LandingContainer>
+  </Container>
 </template>

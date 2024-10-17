@@ -108,7 +108,7 @@ onMounted(() => {
         Please enter your message.
       </div>
     </div>
-    <LandingButton type="submit" size="lg" block>Send Message</LandingButton>
+    <Button type="submit" size="lg" block>Send Message</Button>
     <div id="result" class="mt-3 text-center"></div>
   </form>
 </template>

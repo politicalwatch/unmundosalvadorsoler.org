@@ -1,9 +1,9 @@
 <template>
-  <LandingContainer>
-    <LandingSectionhead>
+  <Container>
+    <Sectionhead>
       <template v-slot:title>{{ page?.title }}</template>
       <template v-slot:desc>{{ page?.subtitle }}</template>
-    </LandingSectionhead>
+    </Sectionhead>
 
     <ContentRenderer :value="page" v-if="page">
       <ContentRendererMarkdown
@@ -11,7 +11,7 @@
         class="flex flex-col gap-3 mx-auto max-w-4xl mt-16"
       />
     </ContentRenderer>
-  </LandingContainer>
+  </Container>
 </template>
 <script setup lang="ts">
 definePageMeta({

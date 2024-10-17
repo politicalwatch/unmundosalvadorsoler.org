@@ -7,7 +7,7 @@
       Static or Dynamic, the choice is yours with Nuxt's hybrid rendering modes.
     </p>
     <div class="flex mt-5">
-      <LandingLink href="#" styleName="inverted">Get Started</LandingLink>
+      <Link href="#" styleName="inverted">Get Started</Link>
     </div>
   </div>
 </template>
