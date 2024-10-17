@@ -26,9 +26,9 @@ export default {
   blocks: {
     hero: {
       title:
-        "Fundación<br /><span class='text-5xl lg:text-6xl xl:text-7xl font-light uppercase'>Salvador Soler</span>",
+        "<span class='text-5xl lg:text-6xl xl:text-7xl font-light uppercase'>Salvador Soler</span><br />Foundation",
       description:
-        "Queremos construir un mundo más justo. Tan lógico y tan difícil a la vez. Para conseguirlo, investigamos cómo reducir las desigualdades e intentamos que nuestros representantes políticos nos escuchen. Creemos en la tecnología y en la humanidad: utilizamos los datos para mejorar las vidas.",
+        "Aiming to build a fairer world. So logical and so difficult at the same time. To achieve this, we research how to reduce inequalities and try to make our political representatives listen to us. We believe in technology and humanity: we use data to improve lives.",
     },
   },
 };
