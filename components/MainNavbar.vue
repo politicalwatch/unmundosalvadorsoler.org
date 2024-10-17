@@ -76,7 +76,7 @@ const open = ref(false);
                 size="24px"
                 name="material-symbols-light:globe"
               />
-              {{ locale.code }}
+              {{ locale.name }}
             </NuxtLink>
           </li>
         </ul>
