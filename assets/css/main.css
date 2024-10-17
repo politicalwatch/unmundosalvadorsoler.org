@@ -7,11 +7,11 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl font-semibold mb-8 text-primary-950;
+  @apply text-3xl font-semibold mt-4 mb-8 text-primary-950;
 }
 
 h3 {
-  @apply text-2xl font-semibold mb-2 text-primary-950;
+  @apply text-2xl font-semibold mt-8 mb-4 text-primary-950;
 }
 
 h4 {
@@ -27,7 +27,7 @@ h6 {
 }
 
 p {
-  @apply text-base mb-4;
+  @apply mb-4 text-base leading-relaxed;
 }
 
 table {
@@ -43,4 +43,8 @@ td {
 }
 
 tr:nth-child(even) {
+}
+
+pre {
+  @apply mb-4;
 }

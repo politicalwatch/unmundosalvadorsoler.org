@@ -8,6 +8,13 @@ const menuitems = [
   // },
 ];
 
+const { t, locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
+
+const availableLocales = computed(() => {
+  return locales.value.filter((l) => l.code !== locale.value);
+});
+
 const open = ref(false);
 </script>
 
@@ -18,7 +25,7 @@ const open = ref(false);
         <NuxtLink to="/" aria-label="Home" class="w-[120px]">
           <Logo viewBox="0 0 694.75 694.82" />
         </NuxtLink>
-        <div class="block lg:hidden" v-if="menuitems.length">
+        <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
             <svg
               fill="currentColor"
@@ -43,7 +50,6 @@ const open = ref(false);
         </div>
       </div>
       <nav
-        v-if="menuitems.length"
         class="w-full lg:w-auto mt-2 lg:flex lg:mt-0"
         :class="{ block: open, hidden: !open }"
       >
@@ -54,6 +60,23 @@ const open = ref(false);
               class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
             >
               {{ item.title }}
+            </NuxtLink>
+          </li>
+          <li
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            class="c-menu__item c-menu__item--lang"
+          >
+            <NuxtLink
+              :to="switchLocalePath(locale.code)"
+              class="flex items-center gap-1 uppercase font-medium"
+            >
+              <Icon
+                class="text-primary-600"
+                size="24px"
+                name="material-symbols-light:globe"
+              />
+              {{ locale.code }}
             </NuxtLink>
           </li>
         </ul>
