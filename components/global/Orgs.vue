@@ -17,19 +17,15 @@ const { data: orgs } = await useAsyncData("orgs", () => {
 </script>
 
 <template>
-  <div class="grid md:grid-cols-3 gap-10 mx-auto my-20" v-if="orgs?.length">
+  <div class="grid md:grid-cols-2 gap-10 mx-auto my-20" v-if="orgs?.length">
     <div
       v-for="(org, i) of orgs"
       :key="i"
       class="p-10 rounded-lg bg-none hover:bg-white transition-all"
     >
       <a :href="org.url" target="_blank">
-        <div class="w-full mb-8">
-          <img
-            :src="org.image.src"
-            :alt="org.image.alt"
-            class="w-full h-full object-contain rounded"
-          />
+        <div class="mb-8 flex justify-center">
+          <img :src="org.image.src" :alt="org.image.alt" class="w-[80%]" />
         </div>
 
         <div class="mt-4">

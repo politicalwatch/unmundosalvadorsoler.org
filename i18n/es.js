@@ -28,7 +28,7 @@ export default {
       title:
         "Fundación<br /><span class='text-5xl lg:text-6xl xl:text-7xl font-light uppercase'>Salvador Soler</span>",
       description:
-        "Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ut ligula dignissim, dictum arcu vel, gravida enim. Curabitur non sem eget massa sodales volutpat. Sed efficitur mollis dui, lacinia ultrices felis commodo et. Duis malesuada iaculis elit, quis elementum nulla porttitor pretium.",
+        "Queremos construir un mundo más justo. Tan lógico y tan difícil a la vez. Para conseguirlo, investigamos cómo reducir las desigualdades e intentamos que nuestros representantes políticos nos escuchen. Creemos en la tecnología y en la humanidad: utilizamos los datos para mejorar las vidas.",
     },
   },
 };
