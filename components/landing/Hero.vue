@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const { t } = useI18n();
+
 const { linksEnabled = false } = defineProps<{ linksEnabled?: boolean }>();
 </script>
 
@@ -19,19 +21,12 @@ const { linksEnabled = false } = defineProps<{ linksEnabled?: boolean }>();
     <div>
       <h1
         class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight text-primary-950"
-      >
-        Fundación<br />
-        <span class="text-5xl lg:text-6xl xl:text-7xl font-light uppercase"
-          >Salvador Soler</span
-        >
-      </h1>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur
-        ut ligula dignissim, dictum arcu vel, gravida enim. Curabitur non sem
-        eget massa sodales volutpat. Sed efficitur mollis dui, lacinia ultrices
-        felis commodo et. Duis malesuada iaculis elit, quis elementum nulla
-        porttitor pretium.
-      </p>
+        v-html="t('blocks.hero.title')"
+      />
+      <p
+        class="text-lg mt-4 text-slate-600 max-w-xl"
+        v-html="t('blocks.hero.description')"
+      />
       <div v-if="linksEnabled" class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
           href="https://github.com/Gr33nW33n/nuxtship-template"

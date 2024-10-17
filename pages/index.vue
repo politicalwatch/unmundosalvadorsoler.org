@@ -1,8 +1,4 @@
 <script setup>
-definePageMeta({
-  layout: "landing",
-});
-
 const orgs = [
   {
     name: "Political Watch",
