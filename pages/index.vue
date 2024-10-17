@@ -35,7 +35,5 @@ const orgs = [
   <LandingContainer>
     <LandingHero></LandingHero>
     <LandingOrgs :orgs="orgs" />
-    <LandingFeatures></LandingFeatures>
-    <LandingCta></LandingCta>
   </LandingContainer>
 </template>

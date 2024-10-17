@@ -15,7 +15,7 @@ const open = ref(false);
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center mb-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <NuxtLink to="index" aria-label="Home" class="w-[120px]">
+        <NuxtLink to="/" aria-label="Home" class="w-[120px]">
           <Logo viewBox="0 0 694.75 694.82" />
         </NuxtLink>
         <div class="block lg:hidden" v-if="menuitems.length">
