@@ -4,7 +4,7 @@ slug: "cooperacion"
 image:
   src: ""
   alt: "Cooperación"
-description: "Además de la investigación y la tecnología aplicada al cambio social, la Fundación Salvador Soler ha invertido también en la acción directa. Desde su creación, ha desarrollado proyectos de cooperación internacional para el desarrollo en África Occidental, sobre todo en países como Benín y Tanzania."
+description: "In addition to research and technology applied to social change, the Salvador Soler Foundation has also invested in direct action. Since its creation, it has developed international cooperation projects for development in West Africa, especially in Benin and Tanzania."
 url: ""
 order: 3
 ---
