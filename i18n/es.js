@@ -11,7 +11,8 @@ export default {
   pages: {
     home: {
       title: "Inicio",
-      description: "Descripción FSS",
+      description:
+        "En Fundación Salvador Soler queremos construir un mundo más justo. Tan lógico y tan difícil a la vez. Para conseguirlo, investigamos cómo reducir las desigualdades e intentamos que nuestros representantes políticos nos escuchen. Creemos en la tecnología y en la humanidad: utilizamos los datos para mejorar las vidas.",
     },
     legal: {
       title: "Aviso legal",

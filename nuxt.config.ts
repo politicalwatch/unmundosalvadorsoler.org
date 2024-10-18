@@ -67,5 +67,10 @@ export default defineNuxtConfig({
     baseUrl: import.meta.env.NUXT_PUBLIC_BASE_URL,
   },
 
+  site: {
+    url: "https://unmundosalvadorsoler.org",
+    name: "Fundación Salvador Soler",
+  },
+
   compatibilityDate: "2024-10-17",
 });

@@ -22,7 +22,7 @@ const { t } = useI18n();
 const { page } = await usePage();
 
 useHead({
-  title: page?.value?.title,
+  title: `${page?.value?.title} | Fundación Salvador Soler`,
   meta: [
     {
       name: "description",
@@ -36,7 +36,7 @@ useHead({
     {
       property: "og:title",
       hid: "og:title",
-      content: `${t("pages.home.title")} | Political Watch`,
+      content: `${t("pages.home.title")} | Fundación Salvador Soler`,
     },
     {
       hid: "twitter:description",
@@ -46,7 +46,7 @@ useHead({
     {
       property: "twitter:title",
       hid: "twitter:title",
-      content: `${t("pages.home.title")} | Political Watch`,
+      content: `${t("pages.home.title")} | Fundación Salvador Soler`,
     },
   ],
 });

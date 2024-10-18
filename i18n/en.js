@@ -11,7 +11,8 @@ export default {
   pages: {
     home: {
       title: "Home",
-      description: "FSS description",
+      description:
+        "In Salvador Soler Foundation we aim to build a fairer world. So logical and so difficult at the same time. To achieve this, we research how to reduce inequalities and try to make our political representatives listen to us. We believe in technology and humanity: we use data to improve lives.",
     },
     legal: {
       title: "Legal notice",
