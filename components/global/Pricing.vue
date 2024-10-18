@@ -34,13 +34,13 @@ defineProps(["plan"]);
         </li>
       </ul>
       <div class="flex mt-8">
-        <Link
+        <CustomLink
           :href="plan.button.link || '#'"
           block
           :styleName="plan.popular ? 'primary' : 'outline'"
         >
           {{ plan.button.text || "Get Started" }}
-        </Link>
+        </CustomLink>
       </div>
     </div>
   </div>
