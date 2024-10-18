@@ -11,6 +11,13 @@ export default defineNuxtConfig({
     },
   },
 
+  app: {
+    pageTransition: {
+      name: "page",
+      mode: "out-in", // default
+    },
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -18,7 +25,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/icon", "@nuxt/image", "@nuxt/content", "@nuxtjs/i18n"],
+  modules: [
+    "@nuxt/icon",
+    "@nuxt/image",
+    "@nuxt/content",
+    "@nuxtjs/i18n",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
+  ],
 
   vite: {
     plugins: [svgLoader()],
