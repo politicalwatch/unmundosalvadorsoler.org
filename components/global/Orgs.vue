@@ -17,7 +17,7 @@ const { data: orgs } = await useAsyncData(`orgs-${locale.value}`, () => {
 </script>
 
 <template>
-  <div class="grid md:grid-cols-3 gap-10 mx-auto my-20" v-if="orgs?.length">
+  <div class="grid md:grid-cols-2 gap-20 mx-auto my-20" v-if="orgs?.length">
     <div
       v-for="(org, i) of orgs"
       :key="i"
