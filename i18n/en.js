@@ -29,7 +29,7 @@ export default {
       title:
         "<span class='text-5xl lg:text-6xl xl:text-7xl font-light uppercase'>Salvador Soler</span><br />Foundation",
       description:
-        "Aiming to build a fairer world. So logical and so difficult at the same time. To achieve this, we research how to reduce inequalities and try to make our political representatives listen to us. We believe in technology and humanity: we use data to improve lives.",
+        "Aiming to build a fairer world. So logical and so difficult at the same time. To achieve this, we research how to reduce inequalities and try to make our political representatives listen to us. We believe in technology and humanity: we use data to improve lives.<br/><br/>We are currently working to improve our website. <a class='link' href='https://old.unmundosalvadorsoler.org'>Access our archive</a> if you want to know what we have done in the last years.",
     },
   },
 };
